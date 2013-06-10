@@ -322,7 +322,9 @@ abstract class html5embed_media_player {
         // based on $CFG->html5embed_media_enable_html5video.
         //$setting = str_replace('_player_', '_enable_', get_class($this));
         //return !empty($CFG->{$setting});
-		return $CFG->core_media_enable_html5video;
+		//return $CFG->core_media_enable_html5video;
+        return true;
+        //temporary will detect which settings not enabled in core for future
     }
 
     /**
